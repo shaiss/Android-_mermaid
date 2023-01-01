@@ -1,5 +1,3 @@
-
-
 // Get the form element
 const form = document.getElementById('mermaid-form');
 
@@ -9,7 +7,6 @@ let selectedStyle = 'default';
 // Add an event listener to the form to handle submit events
 form.addEventListener('submit', (event) => {
   // Prevent the form from submitting
-  console.log('form submitted');
   event.preventDefault();
 
   // Get the markdown input from the form
@@ -20,15 +17,14 @@ form.addEventListener('submit', (event) => {
 
   // Convert the markdown to SVG using the mermaid SVG API
   mermaid.mermaidAPI.render('svg-container', markdown, (svgCode) => {
-  // Use insertAdjacentHTML to update the HTML content of the mermaid container
-  document.getElementById('mermaid-container').insertAdjacentHTML('beforeend', svgCode);
+    // Use insertAdjacentHTML to update the HTML content of the mermaid container
+    document.getElementById('mermaid-container').insertAdjacentHTML('beforeend', svgCode);
 
-  // Show the start over button
-  document.getElementById('start-over-button').style.display = 'block';
-}, {
-  theme: selectedStyle
-});
-
+    // Show the start over button
+    document.getElementById('start-over-button').style.display = 'block';
+  }, {
+    theme: selectedStyle
+  });
 });
 
 // Get the start over button

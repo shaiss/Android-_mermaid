@@ -14,8 +14,17 @@
 <form id="mermaid-form">
   <label for="markdown">Enter your Mermaid markdown:</label><br>
   <textarea id="markdown" name="markdown"></textarea><br>
+  <label for="style">Select a style:</label><br>
+  <select id="style" name="style">
+    <option value="default">Default</option>
+    <option value="dark">Dark</option>
+    <option value="forest">Forest</option>
+    <option value="neutral">Neutral</option>
+    <option value="ocean">Ocean</option>
+  </select><br>
   <button type="submit">Render diagram</button>
 </form>
+
 
 <!-- Add a button to start over after the diagram is generated -->
 <button id="start-over-button" style="display:none;">Start over</button>
