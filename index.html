@@ -1,27 +1,30 @@
 <html>
+
 <head>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Load the mermaid.js library -->
-<script src="https://unpkg.com/mermaid@8.4.4/dist/mermaid.min.js"></script>
+  <!-- Load the mermaid.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"></script>
 
-<!-- Add a placeholder for the mermaid markdown -->
-<div id="mermaid-container"></div>
+  <!-- Add a placeholder for the mermaid markdown -->
+  <div id="mermaid-container"></div>
 
-<!-- Add a form to allow the user to input the mermaid markdown -->
-<form id="mermaid-form">
-  <label for="markdown">Enter your Mermaid markdown:</label><br>
-  <textarea id="markdown" name="markdown"></textarea><br>
-  <button type="submit">Render diagram</button>
-</form>
+  <!-- Add a form to allow the user to input the mermaid markdown -->
+  <form id="mermaid-form">
+    <label for="markdown">Enter your Mermaid markdown:</label><br>
+    <textarea id="markdown" name="markdown"></textarea><br>
+    <button type="submit">Render diagram</button>
+  </form>
 
-<!-- Add a button to start over after the diagram is generated -->
-<button id="start-over-button" style="display:none;">Start over</button>
+  <!-- Add a button to start over after the diagram is generated -->
+  <button id="start-over-button" style="display:none;">Start over</button>
 
-<!-- Link to the script.js file -->
-<script src="script.js"></script>
+  <!-- Link to the script.js file -->
+  <script src="script.js"></script>
 
 </body>
+
 </html>
